@@ -21,6 +21,12 @@ public static void main(String[] args) throws IOException, InterruptedException,
 	List<WebElement> tRow = driver.findElements(By.tagName("tr"));
 	int tsize = tRow.size();
 	System.out.println(tsize);
+	
+	List<WebElement> tHead = driver.findElements(By.tagName("th"));
+	int thsize = tHead.size();
+	System.out.println(thsize);
+	driver.close();
+	
 }
 }
 
